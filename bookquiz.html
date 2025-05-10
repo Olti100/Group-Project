@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Lovers Haven</title>
+    <link rel="stylesheet" href="bookquiz.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#book-clubs">Book Clubs</a></li>
+            <li><a href="#book-recommendations">Book Recommendations</a></li>
+            <li><a href="#bookquiz.html">Book Quiz</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="quiz-container">
+        <h1>Book Quiz</h1>
+        <div id="quiz">
+            <p id="question"></p>
+            <ul id="options">
+                <li><button onclick="checkAnswer(0)">Option 1</button></li>
+                <li><button onclick="checkAnswer(1)">Option 2</button></li>
+                <li><button onclick="checkAnswer(2)">Option 3</button></li>
+                <li><button onclick="checkAnswer(3)">Option 4</button></li>
+            </ul>
+        </div>
+        <div id="result" style="display: none;">
+            <h2>Your score is: <span id="score"></span></h2>
+            <button onclick="startQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+
+
+    <script src="bookquiz.js"></script>
+</body>
+</html>
