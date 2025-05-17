@@ -199,6 +199,13 @@ img{
 
 }
 
+section ul img {
+    width: 400px;
+    height: 200px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
 
 @media screen and (max-width: 768px) {
     nav ul {
